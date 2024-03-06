@@ -25,22 +25,22 @@ export class Alert extends HTMLElement {
       }
       .alert.info {
         color: #0056b3;
-        background-color: --var(--alert-info-bg-color, #cce5ff);
+        background-color: var(--alert-info-bg-color, #cce5ff);
         border-color: #b8daff;
       }
       .alert.warning {
         color: #856404;
-        background-color: --var(--alert-warning-bg-color, #fff3cd);
+        background-color: var(--alert-warning-bg-color, #fff3cd);
         border-color: #ffeeba;
       }
       .alert.error {
         color: #721c24;
-        background-color: --var(--alert-error-bg-color, #f8d7da);
+        background-color: var(--alert-error-bg-color, #f8d7da);
         border-color: #f5c6cb;
       }
       .alert.success {
         color: #155724;
-        background-color: --var(--alert-success-bg-color, #d4edda);
+        background-color: var(--alert-success-bg-color, #d4edda);
         border-color: #c3e6cb;
       }
     `;

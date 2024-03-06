@@ -67,22 +67,22 @@ var p=Object.defineProperty;var u=(s,o,t)=>o in s?p(s,o,{enumerable:!0,configura
       }
       .alert.info {
         color: #0056b3;
-        background-color: --var(--alert-info-bg-color, #cce5ff);
+        background-color: var(--alert-info-bg-color, #cce5ff);
         border-color: #b8daff;
       }
       .alert.warning {
         color: #856404;
-        background-color: --var(--alert-warning-bg-color, #fff3cd);
+        background-color: var(--alert-warning-bg-color, #fff3cd);
         border-color: #ffeeba;
       }
       .alert.error {
         color: #721c24;
-        background-color: --var(--alert-error-bg-color, #f8d7da);
+        background-color: var(--alert-error-bg-color, #f8d7da);
         border-color: #f5c6cb;
       }
       .alert.success {
         color: #155724;
-        background-color: --var(--alert-success-bg-color, #d4edda);
+        background-color: var(--alert-success-bg-color, #d4edda);
         border-color: #c3e6cb;
       }
     `,(r=this.shadowRoot)==null||r.appendChild(t),(e=this.shadowRoot)==null||e.appendChild(o)}}class f extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){setTimeout(()=>{this.render()})}render(){var i,n;const o=document.createElement("div");o.classList.add("section");const t=document.createElement("a");t.href="#",t.classList.add("section-title"),t.textContent=this.getAttribute("title")||"",t.addEventListener("click",c=>{c.preventDefault(),o.classList.toggle("collapsed")});const r=document.createElement("div");r.classList.add("section-content"),r.innerHTML=this.innerHTML||"",o.appendChild(t),o.appendChild(r);const e=document.createElement("style");e.textContent=`
