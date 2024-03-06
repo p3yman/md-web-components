@@ -25,14 +25,20 @@ export class Lightbox extends HTMLElement {
   }
 
   showLightbox = () => {
-    const overlay = this.shadowRoot?.querySelector(".lightbox-overlay");
-    overlay.style.display = "block";
+    const overlay: HTMLElement | null | undefined =
+      this.shadowRoot?.querySelector(".lightbox-overlay");
+    if (overlay?.style?.display) {
+      overlay.style.display = "block";
+    }
     document.body.style.overflow = "hidden"; // Prevent scrolling when lightbox is open
   };
 
   hideLightbox = () => {
-    const overlay = this.shadowRoot?.querySelector(".lightbox-overlay");
-    overlay.style.display = "none";
+    const overlay: HTMLElement | null | undefined =
+      this.shadowRoot?.querySelector(".lightbox-overlay");
+    if (overlay?.style?.display) {
+      overlay.style.display = "none";
+    }
     document.body.style.overflow = ""; // Re-enable scrolling when lightbox is closed
   };
 
