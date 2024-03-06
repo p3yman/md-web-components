@@ -1,0 +1,30 @@
+:root {
+  --bg-color: #3b4557;
+  --border-color: #2a3241;
+}
+
+/* Basics */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+}
+
+.assignment {
+  width: 560px;
+  height: 100vh;
+  background-color: var(--bg-color);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+.markdown-body {
+  background: transparent;
+  padding: 20px;
+}
