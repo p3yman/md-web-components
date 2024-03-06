@@ -5,7 +5,9 @@ export class Alert extends HTMLElement {
   }
 
   connectedCallback() {
-    this.render();
+    setTimeout(() => {
+      this.render();
+    });
   }
 
   render() {

@@ -5,7 +5,9 @@ export class Lightbox extends HTMLElement {
   }
 
   connectedCallback() {
-    this.render();
+    setTimeout(() => {
+      this.render();
+    });
 
     this.shadowRoot
       ?.querySelector(".lightbox-overlay")

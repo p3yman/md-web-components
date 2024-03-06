@@ -5,7 +5,9 @@ export class SwitchTab extends HTMLElement {
   }
 
   connectedCallback() {
-    this.render();
+    setTimeout(() => {
+      this.render();
+    });
   }
 
   render() {
