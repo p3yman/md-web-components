@@ -5,7 +5,9 @@ export class Section extends HTMLElement {
   }
 
   connectedCallback() {
-    this.render();
+    setTimeout(() => {
+      this.render();
+    });
   }
 
   render() {

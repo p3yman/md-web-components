@@ -85,7 +85,7 @@ var p=Object.defineProperty;var u=(s,o,t)=>o in s?p(s,o,{enumerable:!0,configura
         background-color: #d4edda;
         border-color: #c3e6cb;
       }
-    `,(i=this.shadowRoot)==null||i.appendChild(t),(e=this.shadowRoot)==null||e.appendChild(o)}}class g extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){this.render()}render(){var n,r;const o=document.createElement("div");o.classList.add("section");const t=document.createElement("a");t.href="#",t.classList.add("section-title"),t.textContent=this.getAttribute("title")||"",t.addEventListener("click",d=>{d.preventDefault(),o.classList.toggle("collapsed")});const i=document.createElement("div");i.classList.add("section-content"),i.innerHTML=this.innerHTML||"",o.appendChild(t),o.appendChild(i);const e=document.createElement("style");e.textContent=`
+    `,(i=this.shadowRoot)==null||i.appendChild(t),(e=this.shadowRoot)==null||e.appendChild(o)}}class g extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"})}connectedCallback(){setTimeout(()=>{this.render()})}render(){var n,r;const o=document.createElement("div");o.classList.add("section");const t=document.createElement("a");t.href="#",t.classList.add("section-title"),t.textContent=this.getAttribute("title")||"",t.addEventListener("click",d=>{d.preventDefault(),o.classList.toggle("collapsed")});const i=document.createElement("div");i.classList.add("section-content"),i.innerHTML=this.innerHTML||"",o.appendChild(t),o.appendChild(i);const e=document.createElement("style");e.textContent=`
       .section {
         margin-bottom: 20px;
         border: 1px solid #000;
